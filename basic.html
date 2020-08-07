@@ -8,12 +8,6 @@
 </head>
 
 <body>
-    <h1>Heading 1 example</h1>
-
-
-    <h2>Heading 2 example</h2>
-
-    <h4>Heading 4 example</h4>
     <strong>This is how you bold using strong tag</strong>.[3] <em>This is how you italicize using em tag</em>
     <p>Writing in different paragraph with p tag</p>
 
@@ -51,7 +45,7 @@
 
 
     <h2>Using table</h2>
-    <table border="4">
+    <table border="1">
         <tr>
             <td>Red</td>
             <td>oranges</td>
@@ -59,9 +53,68 @@
         <tr>
             <td>green</td>
             <td>yellow</td>
-            <td>yellow</td>
         </tr>
     </table>
+
+    <table border="2">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>breed</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Rusty</td>
+                <td>12</td>
+                <td>Mutt</td>
+            </tr>
+            <tr>
+                <td>Bablu</td>
+                <td>15</td>
+                <td>Golden</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <h4>HTML Forms</h4>
+    <!-- action - where the form send data to -->
+    <!-- method - what HTTP method (get/post) -->
+    <!--  <form action="http://wikipedia.org" method="GET"> -->
+    <form>
+        <input name="username" type="text" placeholder="username">
+        <input name="password" type="password" placeholder="password">
+        <input type="submit">
+    </form>
+    <!-- Using label -->
+    <form action="http://www.wikipedia.org">
+        <label for="username">Username:</label>
+        <input id="username" type="text" placeholder="username" required>
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="email">
+        <label for="password">Password:</label>
+        <input id="password" type="password" placeholder="password" required>
+        <input type="submit">
+    </form>
+
+    <p> Do you prefer cats or dogs?</p>
+    <form>
+        <label for="dogs">Dogs: </label>
+        <input name="petChoice" id="dogs" type="radio" value="dogs">
+        <label for="cats">Cats: </label>
+        <input name="petChoice" id="cats" type="radio" value="cats">
+        <p>What's your favorite color?</p>
+        <select name="color">
+            <option>Red</option>
+            <option>Orange</option>
+            <option>Yellow</option>
+        </select>
+        <textarea name="textarea" rows="10" cols="50"></textarea>
+        <button>Go!</button>
+    </form>
+
 
 </body>
 
