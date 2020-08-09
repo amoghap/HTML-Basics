@@ -1,11 +1,28 @@
 h1 {
-    color: #000000
+    color: #000000;
+    /* border-color: purple;
+    border-width: 5px;
+    border-style: solid; */
+
+    border: 5px dashed purple;
 }
 
 li {
-    color: green
+    color: blue
 }
 
 h4 {
-    color: pink
+
+    background: rgb(255, 100, 80);
+    color: blue;
 }
+
+/* body {
+    background: url(https://wallpapercave.com/wp/Ewa7K29.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+body {
+    background: pink;
+} 
